@@ -7,10 +7,10 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="text-white flex flex-col justify-center items-center gap-10 mt-[50px] mx-[170px] "
+      className="text-white flex flex-col justify-center items-center gap-10 lg:mt-[50px] my-10 lg:mx-[170px] mx-5 "
     >
       <CustomTitle title="My services" />
-      <div className="container grid grid-cols-3 gap-[30px] mb-10">
+      <div className="container px-5 w-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-10 gap-10 mb-10 ">
         {service_data.map((data, i) => {
           return (
             <div
