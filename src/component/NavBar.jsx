@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { navitems } from "../constant/NavItem";
 import CustomButton from "../ui/CustomButton";
 import NavMenu from "./NavMenu";
@@ -24,7 +24,9 @@ const NavBar = () => {
   return (
     <nav className="flex flex-wrap justify-between py-5 font-outfit text-lg mb-10 mx-auto w-[90%] items-center">
       <div>
-        <CustomButton title="JonnyTech" />
+        <h6 className=" italic  text-fuchsia-500 rounded-md px-4 py-2 text-3xl font-semibold">
+          Adew<span className="text-white">ale</span>
+        </h6>
       </div>
       {/* Hamburger Icon */}
       <button

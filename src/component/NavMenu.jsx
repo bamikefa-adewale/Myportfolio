@@ -1,5 +1,6 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 
+// eslint-disable-next-line react/prop-types
 const NavMenu = ({ navitems, activeItem, setActiveItem, handleScroll }) => {
   return (
     <div className="flex flex-col md:flex-row gap-5 md:gap-20">

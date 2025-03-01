@@ -1,5 +1,5 @@
-import React from "react";
 
+// eslint-disable-next-line react/prop-types
 const CustomButton = ({ title, onClick, children, ...props }) => {
   return (
     <button
