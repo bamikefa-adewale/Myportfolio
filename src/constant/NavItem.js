@@ -4,5 +4,4 @@ export const navitems = [
   { name: "Services", link: "#services" },
   { name: "My Work", link: "#my_work" },
   { name: "Contact", link: "#contact" },
-  // { name: "Testimonial", link: "#testimonial" },
 ];

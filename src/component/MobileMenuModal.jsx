@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { FaTimes } from "react-icons/fa";
 import NavMenu from "./NavMenu";
 
@@ -28,8 +28,17 @@ const MobileMenuModal = ({
       {/* Contact Button */}
       <div className="mt-5">
         <button
-          onClick={onClose}
-          className="bg-pink-500 text-white px-4 py-2 rounded-md"
+          onClick={() => {
+            document
+              .getElementById("contact")
+              .scrollIntoView({ behavior: "smooth" });
+
+            // Close the modal after scrolling
+            setTimeout(() => {
+              onClose(false);
+            }, 500); // Delay closing slightly to allow smooth scrolling
+          }}
+          className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-600 transition"
         >
           Contact Us
         </button>

@@ -1,4 +1,3 @@
-// import calculator from "../assets/calculator.png";
 
 export const my_work = [
   {
