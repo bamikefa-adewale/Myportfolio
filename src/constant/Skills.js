@@ -1,5 +1,5 @@
 export const skills = [
-  { name: "JavaScript", width: "80%" },
-  { name: "React", width: "90%" },
-  { name: "CSS", width: "75%" },
+  { name: "HTML", width: "80%" },
+  { name: " CSS / TypeScript", width: "90%" },
+  { name: "Javascript", width: "75%" },
 ];

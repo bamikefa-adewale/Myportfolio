@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { navitems } from "../constant/NavItem";
-import CustomButton from "../ui/CustomButton";
 import NavMenu from "./NavMenu";
 import MobileMenuModal from "./MobileMenuModal";
 import { FaBars } from "react-icons/fa";
@@ -17,17 +16,12 @@ const NavBar = () => {
     setIsMenuOpen(false); // Close modal after clicking a link
   };
 
-  const handleClick = () => {
-    alert("Button clicked");
-  };
-
   return (
     <nav className="flex flex-wrap justify-between py-5 font-outfit text-lg mb-10 mx-auto w-[90%] items-center">
-      <div>
-        <h6 className=" italic  text-fuchsia-500 rounded-md px-4 py-2 text-3xl font-semibold">
-          Adew<span className="text-white">ale</span>
-        </h6>
-      </div>
+      <h6 className=" italic  text-fuchsia-500 rounded-md px-4 py-2 text-3xl font-semibold">
+        Adew<span className="text-white">ale</span>
+      </h6>
+
       {/* Hamburger Icon */}
       <button
         onClick={() => setIsMenuOpen(true)}
@@ -43,7 +37,14 @@ const NavBar = () => {
           setActiveItem={setActiveItem}
           handleScroll={handleScroll}
         />
-        <CustomButton title="Contact Us" onClick={handleClick} />
+        <a
+          href="https://wa.me/2348166176457"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="py-[10px] sm:py-[20px] capitalize px-[30px] sm:px-[50px] cursor-pointer rounded-full bg-gradient-to-r text-white from-purple-500 to-pink-500 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+        >
+          Contact Me
+        </a>
       </div>
       {/* Mobile Menu Modal */}
       {isMenuOpen && (

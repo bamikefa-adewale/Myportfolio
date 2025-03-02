@@ -1,4 +1,3 @@
-import React from "react";
 import CustomTitle from "../ui/CustomTitle";
 import profile from "../assets/profile_img.png";
 import { skills } from "../constant/Skills";
@@ -17,23 +16,28 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-start my-4">
         {/* Profile Image */}
         <div className="col-span-1 md:col-span-1 w-full bg-cover rounded-sm p-2 bg-gradient-to-r from-pink-700 to-purple-300">
-          <img src={profile} alt="profile" className="w-full rounded" />
+          <img
+            src={profile}
+            alt="profile"
+            className="w-full rounded  hover:scale-105 transition duration-300 ease-linear"
+          />
         </div>
 
         {/* Content Section */}
-        <section className="col-span-1 md:col-span-2 flex flex-col gap-10">
+        <section className="col-span-1 md:col-span-2  flex flex-col gap-10">
           {/* Description */}
           <div className="text-base sm:text-lg md:text-2xl font-light flex flex-col gap-4">
             <p>
-              I am an experienced Frontend Developer with over years of
-              professional expertise in the field. Throughout my career, I have
-              had the privilege of collaborating with prestigious organizations,
-              contributing to their success and growth.
+              I'm an experienced Frontend Developer with a strong track record
+              in the field. Over the years, I've had the opportunity to work
+              with some amazing organizations, helping them achieve their goals
+              and grow their businesses.
             </p>
             <p>
-              My passion for frontend development is not only reflected in my
-              extensive experience but also in the enthusiasm and dedication I
-              bring to projects.
+              What drives me is my genuine passion for frontend development.
+              It’s not just about the years of experience I bring to the table,
+              but also the excitement and commitment I pour into every project I
+              work on.
             </p>
           </div>
 
@@ -57,37 +61,14 @@ const About = () => {
         </section>
       </div>
 
-      {/* <div className="flex w-full justify-around mb-20">
-        <div className="flex flex-col items-center hover:scale-105 transition duration-300 ease-in-out">
-          <h1 className="text-[40px] font-bold  text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-            10+
-          </h1>
-          <p className="font-medium text-2xl">YEARS OF EXPERINCE</p>
-        </div>
-        <hr />
-        <div className="flex flex-col items-center hover:scale-105 transition duration-300 ease-in-out">
-          <h1 className="text-[40px] font-bold  text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-            15+
-          </h1>
-          <p className="font-medium text-2xl">PROJECT COMPLETED</p>
-        </div>
-        <hr />
-        <div className="flex flex-col items-center hover:scale-105 transition duration-300 ease-in-out">
-          <h1 className="text-[40px] font-bold  text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-            9+
-          </h1>
-          <p className="font-medium text-2xl">HAPPY CLIENTS</p>
-        </div>
-        <hr />
-      </div> */}
       <div className="flex flex-col md:flex-row w-full justify-between items-center gap-10 mb-20">
         {/* Experience */}
         <div className="flex flex-col items-center hover:scale-105 transition duration-300 ease-in-out">
           <h1 className="text-3xl sm:text-[40px] font-bold text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-            10+
+            +
           </h1>
           <p className="font-medium text-lg sm:text-2xl text-center">
-            YEARS OF EXPERIENCE
+            Reactjs, Nextjs, TypeScript
           </p>
         </div>
 
@@ -97,10 +78,10 @@ const About = () => {
         {/* Projects */}
         <div className="flex flex-col items-center hover:scale-105 transition duration-300 ease-in-out">
           <h1 className="text-3xl sm:text-[40px] font-bold text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-            15+
+            +
           </h1>
           <p className="font-medium text-lg sm:text-2xl text-center">
-            PROJECTS COMPLETED
+            Node.js, PostgreSQL
           </p>
         </div>
 
@@ -110,10 +91,10 @@ const About = () => {
         {/* Happy Clients */}
         <div className="flex flex-col items-center hover:scale-105 transition duration-300 ease-in-out">
           <h1 className="text-3xl sm:text-[40px] font-bold text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-            9+
+            +
           </h1>
           <p className="font-medium text-lg sm:text-2xl text-center">
-            HAPPY CLIENTS
+            Git, GitHub.
           </p>
         </div>
       </div>

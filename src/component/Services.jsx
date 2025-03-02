@@ -1,4 +1,3 @@
-import React from "react";
 import CustomTitle from "../ui/CustomTitle";
 import { service_data } from "../constant/Services";
 import { FaArrowRight } from "react-icons/fa6";

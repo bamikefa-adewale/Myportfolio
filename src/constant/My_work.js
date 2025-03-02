@@ -1,4 +1,3 @@
-
 export const my_work = [
   {
     work_no: 1,
@@ -16,9 +15,9 @@ export const my_work = [
   },
   {
     work_no: 3,
-    work_name: "Landing Page Design",
+    work_name: "Landing Page Design portfolio",
     work_img:
-      "https://images.unsplash.com/photo-1642132652935-d750e2014719?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlYnBhZ2V8ZW58MHx8MHx8fDA%3D",
-    websiteLink: "https://your-landing-page.com",
+      "https://res.cloudinary.com/dbrub0d6r/image/upload/v1740932059/Screenshot_53_b01ccu.png",
+    websiteLink: "https://myportfolio-ten-blue-50.vercel.app/",
   },
 ];
