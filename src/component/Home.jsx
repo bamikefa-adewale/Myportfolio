@@ -1,15 +1,16 @@
-import profile_img from "../assets/profile_img.png";
-
 const Home = () => {
+  const profile =
+    "https://res.cloudinary.com/dbrub0d6r/image/upload/v1741016876/Bamtech_blusza.jpg";
+
   return (
     <section
       id="hero"
       className="flex flex-col font-outfit items-center gap-6 sm:gap-9 text-white px-4"
     >
       <img
-        src={profile_img}
-        alt="profile_img"
-        className="w-[50%] sm:w-[30%] md:w-[20%] h-auto rounded-full object-cover mt-[20px] sm:mt-[40px]"
+        src={profile}
+        alt="profile"
+        className="w-[50%] sm:w-[30%] md:w-[20%] lg:w-[20%] h-[10%] rounded-full object-cover mt-[20px] sm:mt-[40px]"
       />
       <h1 className="text-center font-semibold text-[30px] sm:text-[40px] md:text-[50px] w-[90%] sm:w-[70%] md:w-[50%]">
         <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">

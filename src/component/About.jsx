@@ -1,8 +1,9 @@
 import CustomTitle from "../ui/CustomTitle";
-import profile from "../assets/profile_img.png";
 import { skills } from "../constant/Skills";
 
 const About = () => {
+  const profile =
+    "https://res.cloudinary.com/dbrub0d6r/image/upload/v1741016876/Bamtech_blusza.jpg";
   return (
     <section
       id="about"
@@ -13,13 +14,13 @@ const About = () => {
         <CustomTitle title="About me" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-start my-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 items-center my-4">
         {/* Profile Image */}
-        <div className="col-span-1 md:col-span-1 w-full bg-cover rounded-sm p-2 bg-gradient-to-r from-pink-700 to-purple-300">
+        <div className=" bg-cover rounded-sm p-2 bg-gradient-to-r from-pink-700 to-purple-300">
           <img
             src={profile}
             alt="profile"
-            className="w-full rounded  hover:scale-105 transition duration-300 ease-linear"
+            className="w-full  rounded  hover:scale-105 transition duration-300 ease-linear"
           />
         </div>
 
