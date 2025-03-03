@@ -10,7 +10,7 @@ const Home = () => {
       <img
         src={profile}
         alt="profile"
-        className="w-[50%] sm:w-[30%] md:w-[20%] lg:w-[20%] h-[10%] rounded-full object-cover mt-[20px] sm:mt-[40px]"
+        className="size-60 md:size-80 lg:size-96 rounded-full"
       />
       <h1 className="text-center font-semibold text-[30px] sm:text-[40px] md:text-[50px] w-[90%] sm:w-[70%] md:w-[50%]">
         <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
