@@ -33,14 +33,6 @@ const Home = () => {
         >
           Connect with me
         </a>
-        <a
-          href="/Adewale_Bamikefa_CV.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="py-[10px] sm:py-[20px] px-[30px] sm:px-[50px] capitalize text-white cursor-pointer rounded-full border-2 border-white hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
-        >
-          My Resume
-        </a>
       </div>
     </section>
   );
