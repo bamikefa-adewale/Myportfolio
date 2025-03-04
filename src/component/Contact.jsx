@@ -1,15 +1,44 @@
+import { useRef } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { AiOutlineMail } from "react-icons/ai";
 import { TbPhoneCalling } from "react-icons/tb";
 import { MdLocationOn } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Contact = () => {
+  const formRef = useRef(null);
+  const YOUR_ACCESS_KEY_HERE = "9ca7c09f-f797-43bd-840f-99ec162e9e82";
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        toast.success("Message sent successfully!");
+        e.target.reset(); // Reset form fields
+        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      toast.error("Failed to send message. Check your internet connection.");
+    }
+  };
+
   return (
     <section
       id="contact"
       className="text-white flex flex-col justify-center items-center gap-10 lg:mt-[50px] my-20 lg:mx-[170px] mx-5 "
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 justify-between  items-center gap-10 py-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-10 py-10">
         <div className="flex flex-col gap-8 w-full sm:w-[50%] ">
           <h1 className="font-extrabold text-[30px] sm:text-[40px] md:text-[60px] text-transparent bg-gradient-to-r from-pink-700 to-purple-300 bg-clip-text">
             Let's talk
@@ -32,45 +61,54 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <form className=" text-center flex flex-col items-start gap-6 w-full sm:w-[50%]">
-          <label
-            className="text-[#d8d8d8] text-base sm:text-xl font-medium"
-            htmlFor="name"
-          >
+
+        {/* Form */}
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="text-center flex flex-col items-start gap-6 w-full "
+        >
+          <input type="hidden" name="access_key" value={YOUR_ACCESS_KEY_HERE} />
+
+          <label className="text-[#d8d8d8] text-lg sm:text-xl font-medium">
             Your Name
           </label>
           <input
-            className="w-full h-[50px] sm:h-[60px] font-outfit rounded pl-4 bg-[#32323c] text-[#a0a0a0] text-base sm:text-xl"
+            className="w-full  sm:h-[70px] px-4 py-3 rounded-md bg-[#32323c] text-[#a0a0a0] text-lg sm:text-xl"
             type="text"
+            name="name"
             placeholder="Enter your name"
+            required
           />
-          <label
-            className="text-[#d8d8d8] text-base sm:text-xl font-medium"
-            htmlFor="name"
-          >
+
+          <label className="text-[#d8d8d8] text-lg sm:text-xl font-medium">
             Your Email
           </label>
           <input
-            className="w-full h-[50px] sm:h-[60px] font-outfit rounded pl-4 bg-[#32323c] text-[#a0a0a0] text-base sm:text-xl"
-            type="text"
+            className="w-full h-[60px] sm:h-[70px] px-4 py-3 rounded-md bg-[#32323c] text-[#a0a0a0] text-lg sm:text-xl"
+            type="email"
+            name="email"
             placeholder="Enter your Email"
+            required
           />
-          <label
-            className="text-[#d8d8d8] text-base sm:text-xl font-medium"
-            htmlFor="name"
-          >
+
+          <label className="text-[#d8d8d8] text-lg sm:text-xl font-medium">
             Write your message here
           </label>
           <textarea
-            className="w-full h-[50px] sm:h-[60px] font-outfit rounded pl-4 bg-[#32323c] text-[#a0a0a0] text-base sm:text-xl"
-            name=" messagae"
-            placeholder="Enter your messagae"
-            rows={8}
+            className="w-full h-[150px] sm:h-[180px] px-4 py-3 rounded-md bg-[#32323c] text-[#a0a0a0] text-lg sm:text-xl"
+            name="message"
+            placeholder="Enter your message"
+            rows={5}
+            required
           />
-          <div className="flex items-center gap-2 mb-10 px-6 py-2 capitalize text-white cursor-pointer rounded-full border-2 border-white hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
-            <button>Submit</button>
-            <FaArrowRight />
-          </div>
+
+          <button
+            type="submit"
+            className="flex items-center gap-2 px-6 py-3 capitalize text-white rounded-full border-2 border-white hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+          >
+            Submit <FaArrowRight />
+          </button>
         </form>
       </div>
     </section>

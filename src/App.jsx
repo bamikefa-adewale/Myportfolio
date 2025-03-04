@@ -5,10 +5,13 @@ import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 import NavBar from "./component/NavBar";
 import Home from "./component/Home";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
     <main className="bg-black">
+      <ToastContainer position="top-right" autoClose={3000} />
       <NavBar />
       <div className="">
         <Home />
