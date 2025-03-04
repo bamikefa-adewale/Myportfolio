@@ -13,11 +13,12 @@ const NavBar = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMenuOpen(false); // Close modal after clicking a link
+    setIsMenuOpen(false);
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-black/30">
+    <nav className="sticky top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/30">
+      {/* // <nav className="fixed top-0 left-0 w-full bg-red-100 z-50"> */}
       <div className="flex flex-wrap mx-auto w-[90%] justify-between py-3 font-outfit text-lg mb-10 items-center">
         <h6 className=" italic  text-fuchsia-500 rounded-md px-4 py-2 text-3xl font-semibold">
           Adew<span className="text-white">ale</span>

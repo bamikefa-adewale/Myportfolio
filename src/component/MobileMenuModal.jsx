@@ -10,7 +10,7 @@ const MobileMenuModal = ({
   onClose,
 }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex flex-col items-center justify-center">
+    <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex flex-col items-center  min-h-screen">
       {/* Close Button */}
       <button
         onClick={onClose}
@@ -19,14 +19,17 @@ const MobileMenuModal = ({
         <FaTimes />
       </button>
       {/* Mobile Nav Menu */}
-      <NavMenu
-        navitems={navitems}
-        activeItem={activeItem}
-        setActiveItem={setActiveItem}
-        handleScroll={handleScroll}
-      />
+      <div className="fixed inset-0 mt-40 bg-black bg-opacity-80 z-50 flex flex-col items-center ">
+        {" "}
+        <NavMenu
+          navitems={navitems}
+          activeItem={activeItem}
+          setActiveItem={setActiveItem}
+          handleScroll={handleScroll}
+        />
+      </div>
       {/* Contact Button */}
-      <div className="mt-5">
+      <div className="mt-5 hidden">
         <button
           onClick={() => {
             document

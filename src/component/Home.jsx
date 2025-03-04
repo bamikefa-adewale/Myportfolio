@@ -4,22 +4,22 @@ const Home = () => {
 
   return (
     <section
-      id="hero"
-      className="flex flex-col font-outfit items-center gap-6 sm:gap-9 text-white px-4"
+      id="home"
+      className="flex flex-col font-outfit items-center gap-6 sm:gap-9  px-4"
     >
       <img
         src={profile}
         alt="profile"
         className="size-60 md:size-80 lg:size-96 rounded-full"
       />
-      <h1 className="text-center font-semibold text-[30px] sm:text-[40px] md:text-[50px] w-[90%] sm:w-[70%] md:w-[50%]">
+      <h1 className="text-center font-semibold text-[30px] text-white sm:text-[40px] md:text-[50px] w-[90%] sm:w-[70%] md:w-[50%]">
         <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
           I'm Adewale John,
         </span>{" "}
         a frontend developer specializing in creating seamless and engaging user
         experiences.
       </h1>
-      <p className="text-[16px] sm:text-[20px] md:text-[24px] leading-7 sm:leading-8 text-center w-[95%] sm:w-[80%] md:w-[60%]">
+      <p className="text-[18px] text-gray-50 sm:text-[16px] md:text-[20px] leading-7 sm:leading-8 text-center w-[95%] sm:w-[80%] md:w-[60%]">
         With expertise in React.js, Next.js, Typescript and responsive design, I
         focus on building intuitive and interactive interfaces that elevate user
         engagement and drive results
