@@ -14,7 +14,7 @@ const Home = () => {
       />
       <h1 className="text-center font-semibold text-[30px] text-white sm:text-[40px] md:text-[50px] w-[90%] sm:w-[70%] md:w-[50%]">
         <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
-          I'm Adewale John,
+          I’m Adewale John,
         </span>{" "}
         a frontend developer specializing in creating seamless and engaging user
         experiences.
@@ -24,7 +24,7 @@ const Home = () => {
         focus on building intuitive and interactive interfaces that elevate user
         engagement and drive results
       </p>
-      <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-[16px] sm:text-[24px]">
+      <div className="flex  items-center gap-4 sm:gap-6 text-[16px] sm:text-[24px]">
         <a
           href="https://wa.me/2348166176457"
           target="_blank"
@@ -33,6 +33,15 @@ const Home = () => {
         >
           Connect with me
         </a>
+        <button className="border py-[10px] text-white hover:text-black sm:py-[20px] capitalize px-[30px] sm:px-[50px] cursor-pointer rounded-full  hover:bg-slate-200 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg ">
+          <a
+            href="/Adewale_Bamikefa_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </button>
       </div>
     </section>
   );
