@@ -16,13 +16,14 @@ const Home = () => {
         <span className="text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text">
           I’m Adewale John,
         </span>{" "}
-        a frontend developer specializing in creating seamless and engaging user
+        a Sofaware Developer specializing in creating seamless and engaging user
         experiences.
       </h1>
       <p className="text-[18px] text-gray-50 sm:text-[16px] md:text-[20px] leading-7 sm:leading-8 text-center w-[95%] sm:w-[80%] md:w-[60%]">
-        With expertise in React.js, Next.js, Typescript and responsive design, I
-        focus on building intuitive and interactive interfaces that elevate user
-        engagement and drive results
+        With expertise in React.js, Next.js, TypeScript, PostgreSQL, TypeORM,
+        and NestJS, I focus on building scalable full-stack applications. My
+        passion lies in crafting intuitive and interactive interfaces with
+        responsive design that elevate user engagement and drive results.
       </p>
       <div className="flex  items-center gap-4 sm:gap-6 text-[16px] sm:text-[24px]">
         <a
@@ -35,7 +36,8 @@ const Home = () => {
         </a>
         <button className="border py-[10px] text-white hover:text-black sm:py-[20px] capitalize px-[30px] sm:px-[50px] cursor-pointer rounded-full  hover:bg-slate-200 transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg ">
           <a
-            href="/Adewale_Bamikefa_CV.pdf"
+            href="
+            /Adewale_Bamikefa_Resume2.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

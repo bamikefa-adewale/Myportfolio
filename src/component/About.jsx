@@ -44,22 +44,15 @@ const About = () => {
             transition={{ delay: 0.5 }}
           >
             <p>
-              I am a passionate frontend developer motivated to build innovative
-              and user friendly web applications. I have spent countless hours
-              working on my personal projects, freelance work, and learning,
-              which helps me establish expertise in React, Next.js, TypeScript,
-              Tailwind CSS, Git/GitHub, RESTful APIs, PostgreSQL, Supabase,
-              DrizzleORM, and more. Every undertaking is a chance for boundary
-              pushing problem solving that leaves a powerful mark.
-            </p>
-            <p>
-              In my case, frontend enthusiasm combined with a focus on engaging
-              interface design is what differentiates me from others in the
-              industry. Making ideas into reality is something I fantastically
-              enjoy, so challenging tasks always interest me. If you would like
-              for your business ideas or organizational goals to come true,
-              don’t hesitate to contact me. Together, let’s discuss how we can
-              work as partners to build something extraordinary!
+              I am a passionate Software Developer with solid backend expertise
+              using NestJS, PostgreSQL, and TypeORM. Proficient in HTML, CSS,
+              and modern JavaScript frameworks, with a passion for building
+              scalable, maintainable, and user-friendly web applications.
+              Skilled in developing and integrating RESTful APIs, managing
+              relational databases, and ensuring seamless communication between
+              front-end and back-end systems. Adept at solving complex problems,
+              collaborating across teams, and delivering high-performance
+              applications that enhance both functionality and user engagement.
             </p>
           </motion.div>
 
@@ -94,7 +87,7 @@ const About = () => {
       >
         {[
           "Reactjs || Nextjs || TypeScript",
-          "Node.js || PostgreSQL",
+          "Node.js || Nesjs || TYPEORM || PostgreSQL",
           "Git || GitHub",
         ].map((text, i) => (
           <motion.div
